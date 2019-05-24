@@ -29,24 +29,63 @@
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{13cm} 
-	   \includegraphics[width=12cm]{Folie1.JPG} 
+%	   \includegraphics[width=12cm]{Folie1.JPG} 
 	\end{minipage}}
 
 	\vspace{0.3cm}
 
 	\fbox{\begin{minipage}{13cm}  
-		\includegraphics[width=12cm]{Folie2.JPG} 
+%		\includegraphics[width=12cm]{Folie2.JPG} 
 	\end{minipage}}
 
 	\vspace{0.3cm}
 
 	\fbox{\begin{minipage}{13cm} 
-		\includegraphics[width=12cm]{Folie3.JPG} 
+%		\includegraphics[width=12cm]{Folie3.JPG} 
 	\end{minipage}}
 	
 \end{figure}
 
 \section{Produktidee}
+
+{\large Name: Atlas \\
+Vision: Geocaching auf einem neuen Level}\\ \\
+{\large Funktionen:}\\
+\begin{itemize}
+	\item Strecken laufen
+	\item Strecken erstellen (nur erfahrene Benutzer)
+	\item Gruppen erstellen
+	\begin{itemize}
+		\item mit Gruppe Strecken laufen
+		\item mit Gruppe chatten
+	\end{itemize}
+	\item Herausforderungen senden
+	\item Achievements erhalten
+	\item extra Strecken kaufen
+	\item Bewertung abgeben 
+\end{itemize}
+\bigskip
+{\large Vorteile für Anwender:}\\
+\begin{itemize}
+	\item Kennenlernen der neuen Stadt/Umgebung
+	\item Freunde mit gleichen Interessen finden
+	\item Sport/frische Luft
+\end{itemize}
+\bigskip
+{\large Zielgruppen:}\\
+\begin{itemize}
+	\item Familien
+	\item Studenten
+	\item Berufstätige
+	\item Rentner
+\end{itemize}
+{\large Einschränkungen und Randbedingungen:}\\
+\begin{itemize}
+	\item vorerst nur auf Deutsch
+	\item nur Android
+	\item nur wenige vorerstellte Strecken
+\end{itemize}
+
 \section{Managementvorlage}
 Nun stellen Sie sich sicher die Frage: Warum sollte man in so etwas investieren? Ist eine App für Geocaching wirklich ein Vorhaben Erfolgsaussichten? Wer sollte denn so etwas brauchen?\newline
 Ein Beispiel: Sie ziehen in eine neue Stadt, eine Situation, die bestimmt jeder schon einmal erlebt hat. Nun müssen Sie sich in einer neuen Umgebung zurechtfinden, die Stadt kennenlernen, wollen vielleicht ein paar der örtlichen Sehenswürdigkeiten ansehen. Und natürlich wollen Sie bestimmt auch neue Leute treffen, immerhin kennen Sie ja noch niemanden und da ist es schwer so ganz allein zurechtzukommen.
@@ -64,9 +103,182 @@ Es wird ein kostenloses Startpaket mit verschiedenen Strecken aus der Region des
 \section{Projektauftrag}
 \section{Umsetzbarkeit}
 \section{Stakeholder-Analyse}
+
+\begin{center}
+
+
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+Name/Rolle & Beschreibung & konkreter Vertreter & Wissens- gebiete & Verfügbar- keit & Begründung\\ \hline
+Familien & Benutzer des Systems & Hr.Müller M@oth.de Tel:7563& wenig Erfahrung mit Smartphone & 30\% verfügbar & kurze und einfache Strecken für Kinder\\ \hline
+Senioren & Benutzer des Systems & Hr.Schmidt S@oth.de Tel:7336 & wenig Erfahrung mit Smartphone & 10\% verfügbar & einfache Bedienung/ Angabe der Schwierigkeit nötig\\ \hline
+junge Menschen/ Berufstätige & Benutzer des Systems & Fr.Bauer B@oth.de Tel:3960& viel Erfahrung mit Smartphone & 40\% verfügbar & wenig Zeit\\ \hline
+Gemeinden & Verkauf an Gemeinden & Hr.Schmidt S@oth.de Tel:3724& kennt Umgebung/ gute Locations & 20\% verfügbar & Angebot, Strecken für Gemeinden zu erstellen\\ \hline
+Entwickler & Entwickler des Systems & Hr.Hofbauer H@oth.de Tel:1346& sehr gute Programmier- kentnisse & 60\% verfügbar & Entwickler setzen Projekt um\\ \hline
+Service & Anbieter von Hilfe/ Wartung & Hr.Müller M@oth.de Tel:8356& IT- Spezialist & 5\% verfügbar & Problem- beheber\\ \hline
+Anbieter der Zahlungs- methoden & für in App Käufe & Fr.Erhard E@oth.de Tel:9543 & kennt Zahlungs- methoden & 5\% verfügbar & für Strecken- käufe\\ \hline
+Marketing & Werbung für App & Hr.Müller M@oth.de Tel:3688 & Marketing Spezialist & 40\% verfügbar & Werbung in Gemeinden\\ \hline
+Strecken- ersteller & Benutzer, die Strecken erstellen können & Hr.Meier M@oth.de Tel:3745& erfahrene Strecken- läufer & 20\% verfügbar & einfacher Strecken- editor nötig\\ \hline
+\hline
+
+\end{tabular}
+\end{center}
+
 \section{Systemkontext}
+
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{13cm} 
+%	   \includegraphics[width=12cm]{Kontextdiagramm.png} 
+	\end{minipage}}
+
+	
+\end{figure}
+
 \section{Anforderungen}
 \subsection{Funktionale Anforderungen}
+{\Large Strecken laufen}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Start-button
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item Zeit und GPS-Daten werden aufgenommen
+	\item Lösen der Rätsel an Zwischenstationen
+	\item Prüfe, ob Lösung richtig, wenn nicht, nochmal versuchen
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item Koordinaten der nächsten Location
+	\end{itemize}
+\end{itemize}
+
+
+\bigskip
+{\Large Strecken erstellen}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Schwierigkeit, Zeit, Beschreibung, Koordinaten der Zwischen-/ 						Ziellocation, Rätsel
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item auf Vollständigkeit prüfen
+	\item wenn nicht vollständig, werden die fehlenden Daten eingetragen
+	\item auf sinnvolle Eingaben prüfen
+	\item wenn nicht sinnvoll, werden die Daten erneut eingetragen
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item erstellte Strecke
+	\end{itemize}
+\end{itemize}
+
+\bigskip
+{\Large Gruppen erstellen}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Name, Mitglieder
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item Mitglieder werden hinzugefügt
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item erstellte Gruppe
+	\end{itemize}
+\end{itemize}
+
+\bigskip
+{\Large Herausforderungen senden}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Namen der Gegner, Strecke
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item Herausforderungen annehmen oder nicht
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item Herausforderung angenommen oder nicht
+	\end{itemize}
+\end{itemize}
+
+\bigskip
+{\Large Achievements erhalten}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item User erfüllt bedingung eines Achievements
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item Achievement wird freigeschaltet
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item Punkte, Icon
+	\end{itemize}
+\end{itemize}
+
+\bigskip
+{\Large Strecken kaufen}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Strecke/ Streckenpaket
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item User zahlt Artikel
+	\item User kann durch Punkte Rabatt bekommen
+	\item wenn bezahlt, werden gekaufte Strecken freigeschaltet
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item neue Strecken
+	\end{itemize}
+\end{itemize}
+
+\bigskip
+{\Large Bewertung abgeben}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Text, Bewertung der Schwierigkeit
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item Bewertung senden
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item Bewertung
+	\end{itemize}
+\end{itemize}
+
+\bigskip
+{\Large Chat benutzen}\\
+\begin{itemize}
+\item Eingabe
+	\begin{itemize}
+	\item Nachricht
+	\end{itemize}
+\item Verarbeitung
+	\begin{itemize}
+	\item Nachrichten senden / anzeigen / löschen
+	\end{itemize}
+\item Ausgabe
+	\begin{itemize}
+	\item Nachricht mit Ersteller, Zeit
+	\end{itemize}
+\end{itemize}
 \subsection{Nichtfunktionale Anforderungen}
 \subsubsection{Technische Anforderungen}
 \subsubsection{Ergonomische Anforderungen}
