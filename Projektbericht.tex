@@ -136,7 +136,118 @@ Yvonne Schießl
 Yvonne Schießl
 
 \section{Umsetzbarkeit}
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{User}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ string : name & \# anmelden(name : string, passwort : string) : void \\ \hline
+\# passwort : string & \# abmelden() : void  \\ \hline
+\# history : List<Strecke> &  \\ \hline
+\# ID : int &  \\ \hline
+\# /AnzahlGelaufenerStrecken : int &  \\ \hline
++ /punkte : int & \\ \hline
+%\multicolumn{2}{c}{ }\\
+\end{tabular}\\[1\baselineskip]
 
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Streckenersteller : User}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
+- erstellteStrecken : List<Strecke> & - streckeBearbeiten(strecke : Strecke) : void  \\ \hline
+- /AnzahlErstellterStrecken : int & \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Strecke}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ name : int & - historyErweitern() : void \\ \hline
++ laenge : string &  \\ \hline
++ /schwierigkeit : int &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Artikel}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ preis : int &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Kartenpunkt}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ Koordinaten : int &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Raetsel}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ raetsel : string & - loesungZeigen() : string \\ \hline
+- loesung : string &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Bewertung}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ autor : User & + textschreiben(text : string) : void \\ \hline
++ datum : string & + schwierigkeitBewerten(bewertung : int) : void \\ \hline
++ bewertung : string &  \\ \hline
++ schwierigkeit : int &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Achievment}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ name : string & - iconZeigen() : void \\ \hline
++ beschreibung : string &  \\ \hline
++ punkte : int &  \\ \hline
+- icon : img &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Nachricht}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ zeit : string &  \\ \hline
++ ersteller : string &  \\ \hline
++ nachricht : string &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Chat}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
+ & + chatverlaufLoeschen() : void \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Gruppe}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
++ name : string & + teilnehmerHinzufuegen(user : User) : void \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Event}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
+ & + einladen(name : string) : void \\ \hline
+ & + beenden() : void \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Gruppenevent : Event}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
+- zeit : string &  \\ \hline
+- ort : string &  \\ \hline
+\end{tabular}\\[\baselineskip]
+
+\begin{tabular}{ | p{5.5cm} | p{8cm} |}
+\multicolumn{2}{c}{\textbf{Wettbewerbsfunktion : Event}}\\ \hline
+\textbf{Attribute} & \textbf{Methoden} \\ \hline
+- teilnehmerzeiten : List<int> &  \\ \hline
+- punkte : int &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+ &  \\ \hline
+\end{tabular}\\[1\baselineskip]
+
+Bernhard Wildangel
 
 
 \section{Stakeholder-Analyse}
