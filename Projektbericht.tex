@@ -9,6 +9,7 @@
             marginparwidth=40mm,
             ]{geometry}
 \usepackage{float}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \graphicspath{ {./Bilder/} }
 
@@ -120,6 +121,9 @@ Yvonne Schießl
 Yvonne Schießl
 
 \section{Umsetzbarkeit}
+
+
+
 \section{Stakeholder-Analyse}
 
 \begin{center}
@@ -299,26 +303,33 @@ Strecken- ersteller & Benutzer, die Strecken erstellen können & Hr.Meier M@oth.
 \end{itemize}
 \subsection{Nichtfunktionale Anforderungen}
 \subsubsection{Technische Anforderungen}
+\label{technAnf}
 • Das System muss mit Java entwickelt werden.\newline
 • Der Speicherbedarf darf 1,5 GB nicht übersteigen.\newline
 • Der Speicherbedarf im RAM darf nicht 150 MByte übersteigen.\newline
 • Das System muss auf allen Smartphones mit einem Android Betriebssystem Version 8 oder höher laufen.
 \subsubsection{Ergonomische Anforderungen}
 • Die Benutzerführung erfolgt in deutsch.\newline
+\label{Lesbarkeit}
 • Die Schriftgröße soll wählbar zwischen normal (12pt) und groß (15pt) sein.\newline
+\label{Vorschlaege}
 • Das System soll sich das User-Verhalten bei der Suche nach Strecken merken und dementsprechend passende Strecken bereits vorschlagen.
 \subsubsection{Anforderungen an die Dienstqualität:}
+\label{Warten}
 • Das System soll bei einer durchschnittliche Internetgeschwindigkeit von 13.000 Kilobit/s maximal 2 Sekunden benötigen, um den s User einzuloggen.\newline
 • Das System soll bei einer durchschnittliche Internetgeschwindigkeit von 13.000 Kilobit/s maximal 5 Sekunden benötigen, um auf die Datenbank der Strecken zuzugreifen.\newline
 • Das vom System genutzte GPS darf nicht an Genauigkeit verlieren.
 \subsubsection{Rechtliche Anforderungen}
 • Der Kunde leistet ein Viertel der vertraglich für die Systementwicklung vereinbarten Summe im Vorraus.\newline
+\label{Datenschutz}
 • Die deutschen Datenschutzrichtlinien müssen erfüllt sein.\newline
+\label{Sicherheit}
 • Die Datenbank mit den Daten der User ist bestmöglich nach aktuellem Kenntnisstand der IT-Security zu schützen.\newline
 • Die Datenbanken werden vierteljährlich gewartet.
 \subsubsection{Weitere Arten Nichtfunktionaler Anforderungen}
+\label{Bugs}
 Anforderungen an die Zuverlässigkeit:\newline
-• Das System soll eine Absturzrate  $\leq \ $1\% haben.
+• Das System soll eine Absturzrate  $\leq \ $1\% haben. %Absturzrate genauer definieren?
 
 Yvonne Schießl
 
@@ -340,6 +351,21 @@ Ein gewisses Restrisiko bleibt natürlich immer, dennoch haben wir uns darum bem
 Yvonne Schießl
 
 \section{Kano-Modell}
+%\small{
+\begin{tabular}{ | p{5cm} | p{1.1cm} | c | c | p{1.7cm} | p{1.5cm} | c |}
+\hline
+Kundenaussage & Anfor-derung & Kategorie & Zufriedenheit & Erfüllungs-grad & Aufand/ Nutzen & Prio \\ \hline
+Die App muss auf meinem Handy funktionieren  & \ref{technAnf} & Basis & -1 & 80\% & hoch & A \\ \hline
+Es wäre toll, wenn ich meine Lesebrille nicht bräuchte & \ref{Lesbarkeit} & Begeisterung & 2 & 30\% & niedrig & C \\ \hline
+Wenn mir automatisch Strecken vorgeschlagen würden, die mir gefallen, wäre ich begeistert & \ref{Vorschlaege} & Begeisterung & 0 & 0\% & hoch & C \\ \hline
+Ich will nicht lange auf die App warten oder nach Caches suchen müssen & \ref{Warten} & Leistung & 2 & 60\% & mittel	& B \\ \hline
+Ich möchte, dass meine Daten vertraulich gehandhabt werden & \ref{Datenschutz} & Basis & 1 & 100\% & & Erfüllt \\ \hline
+Ich gehe davon aus, dass die App sicher ist & \ref{Sicherheit} & Basis & 0 & 40\% & niedrig & C \\ \hline
+Ich mag es nicht, wenn Apps ständig abstürzen & \ref{Bugs} & Basis & -4 & 70\% & hoch & A \\ \hline
+\end{tabular}\\
+
+Bernhard Wildangel
+
 \section{Use-Cases}
 \subsection{Use-Case-Diagramm}
 
