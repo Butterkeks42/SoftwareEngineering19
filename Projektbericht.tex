@@ -13,16 +13,24 @@
 \usepackage{graphicx}
 \graphicspath{ {./Bilder/} }
 
-\title{\textbf{Requirements Specifications}}
+\title{\textbf{Projektbericht}}
 \author{ Yvonne Schießl \\
 		Anna Schmidbauer\\
 		Bernhard Wildangel}
 \date{}
 \begin{document}
 \maketitle
+
+\begin{figure}[H] 
+	\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Logo.jpg} 
+	\end{minipage}
+\end{figure}
+\newpage
+
 \tableofcontents
 \newpage
-\section{Abstract}
+\section{Abstrakt} Bernhard Wildangel\\
 
 
 \subsection{Szenario ohne Atlas}
@@ -38,33 +46,34 @@ Spieler können andere Spieler dazu herausfordern. Dazu wählen sie Strecke und 
 Events können viele verschiedene Formen annehmen, d.h. es können mehrere Spieler an solchen teilnehmen, die dann nahezu beliebige Zusatzbedingungen bei einer Strecke erfüllen müssen. Spieler erhalten durch die erfolgreiche Teilnahme an Herausforderungen bzw. Events Punkte.\\
 Manche Strecken, die bspw. schwieriger als andere sind, sind nicht für alle Spieler von vorneherein zugänglich, sondern müssen im App-internen Shop gekauft werden. Auch der Kauf von Streckenpaketen ist möglich.\\
 \\
-Bernhard Wildangel
 
-\section{Folien bzw. Pitch}
+\newpage
+\section{Folien bzw. Pitch}Yvonne Schießl, Anna Schmidbauer, Bernhard Wildangel\\
 
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{13cm} 
-%	   \includegraphics[width=12cm]{Folie1.JPG} 
+	   \includegraphics[width=12cm]{Folie1.JPG} 
 	\end{minipage}}
 
 	\vspace{0.3cm}
 
 	\fbox{\begin{minipage}{13cm}  
-%		\includegraphics[width=12cm]{Folie2.JPG} 
+		\includegraphics[width=12cm]{Folie2.JPG} 
 	\end{minipage}}
 
 	\vspace{0.3cm}
 
 	\fbox{\begin{minipage}{13cm} 
-%		\includegraphics[width=12cm]{Folie3.JPG} 
+		\includegraphics[width=12cm]{Folie3.JPG} 
 	\end{minipage}}
 	
-Yvonne Schießl, Anna Schmidbauer, Bernhard Wildangel
+
 	
 \end{figure}
 
-\section{Produktidee}
+\newpage
+\section{Produktidee}Anna Schmidbauer\\
 
 {\large Name: Atlas \\
 Vision: Geocaching auf einem neuen Level}\\ \\
@@ -104,7 +113,8 @@ Vision: Geocaching auf einem neuen Level}\\ \\
 	\item nur wenige vorerstellte Strecken
 \end{itemize}
 
-\section{Managementvorlage}
+\newpage
+\section{Managementvorlage}Yvonne Schießl\\
 Nun stellen Sie sich sicher die Frage: Warum sollte man in so etwas investieren? Ist eine App für Geocaching wirklich ein Vorhaben Erfolgsaussichten? Wer sollte denn so etwas brauchen?\newline
 Ein Beispiel: Sie ziehen in eine neue Stadt, eine Situation, die bestimmt jeder schon einmal erlebt hat. Nun müssen Sie sich in einer neuen Umgebung zurechtfinden, die Stadt kennenlernen, wollen vielleicht ein paar der örtlichen Sehenswürdigkeiten ansehen. Und natürlich wollen Sie bestimmt auch neue Leute treffen, immerhin kennen Sie ja noch niemanden und da ist es schwer so ganz allein zurechtzukommen.
 Und genau hier kommen wir ins Spiel!\newline
@@ -118,30 +128,30 @@ Für Familien und junge Erwachsene, die nach etwas mehr Spannung und Action in i
 Der Erfolg der App wäre also schon mal sicher. Aber halt, die für Sie wichtigste Frage bleibt ja: Wie kann man damit Geld verdienen? Ganz einfach, mit In-App Käufen!\newline
 Es wird ein kostenloses Startpaket mit verschiedenen Strecken aus der Region des Nutzers geben, alle weiteren Strecken in verschiedenen Schwierigkeiten, Längen, höherem Rätselanteil oder andere Orte, können kostenpflichtig im Shop erworben werden. Außerdem werden wir für Städte und Gemeinden, die als eine unserer Hauptprofitierenden gelten, einen Service für die Streckenerstellung einführen. So können sie auf unsere Erfahrungen beim Bau von Geocaching-Strecken zugreifen und müssen nicht selbst Leute damit beauftragen und wir erhalten mit jeder erstellten Strecke Geld.
 
-Yvonne Schießl
-
 \section{Projektauftrag}
 \begin{figure}[H] 
 	\begin{minipage}{17cm} 
-%	   \includegraphics[page = 1, width=17cm]{Projektauftrag.pdf} 
+	   \includegraphics[page = 1, width=17cm]{Projektauftrag.pdf} 
 	\end{minipage}
 \end{figure}
 
 \begin{figure}[H] 
 	\begin{minipage}{17cm} 
-%	   \includegraphics[page = 2, width=17cm]{Projektauftrag.pdf} 
+	   \includegraphics[page = 2, width=17cm]{Projektauftrag.pdf} 
 	\end{minipage}
 \end{figure}
 
-Yvonne Schießl
 
-\section{Umsetzbarkeit}
+
+\newpage
+\section{Umsetzbarkeit}Bernhard Wildangel\\
+
 \begin{tabular}{ | p{5.5cm} | p{8cm} |}
 \multicolumn{2}{c}{\textbf{User}}\\ \hline
 \textbf{Attribute} & \textbf{Methoden} \\ \hline
 + string : name & \# anmelden(name : string, passwort : string) : void \\ \hline
 \# passwort : string & \# abmelden() : void  \\ \hline
-\# history : List<Strecke> &  \\ \hline
+\# history : List$<$Strecke$>$ &  \\ \hline
 \# ID : int &  \\ \hline
 \# /AnzahlGelaufenerStrecken : int &  \\ \hline
 + /punkte : int & \\ \hline
@@ -151,7 +161,7 @@ Yvonne Schießl
 \begin{tabular}{ | p{5.5cm} | p{8cm} |}
 \multicolumn{2}{c}{\textbf{Streckenersteller : User}}\\ \hline
 \textbf{Attribute} & \textbf{Methoden} \\ \hline
-- erstellteStrecken : List<Strecke> & - streckeBearbeiten(strecke : Strecke) : void  \\ \hline
+- erstellteStrecken : List$<$Strecke$>$ & - streckeBearbeiten(strecke : Strecke) : void  \\ \hline
 - /AnzahlErstellterStrecken : int & \\ \hline
 \end{tabular}\\[1\baselineskip]
 
@@ -240,26 +250,19 @@ Yvonne Schießl
 \begin{tabular}{ | p{5.5cm} | p{8cm} |}
 \multicolumn{2}{c}{\textbf{Wettbewerbsfunktion : Event}}\\ \hline
 \textbf{Attribute} & \textbf{Methoden} \\ \hline
-- teilnehmerzeiten : List<int> &  \\ \hline
+- teilnehmerzeiten : List$<$int$>$ &  \\ \hline
 - punkte : int &  \\ \hline
  &  \\ \hline
  &  \\ \hline
  &  \\ \hline
 \end{tabular}\\[1\baselineskip]
-
-Bernhard Wildangel
-
-
-\section{Stakeholder-Analyse}
-
+\section{Stakeholder-Analyse}Anna Schmidbauer\\
 \begin{center}
-
-
 \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \hline
 Name/Rolle & Beschreibung & konkreter Vertreter & Wissens- gebiete & Verfügbar- keit & Begründung\\ \hline
 Familien & Benutzer des Systems & Hr.Müller M@oth.de Tel:7563& wenig Erfahrung mit Smartphone & 30\% verfügbar & kurze und einfache Strecken für Kinder\\ \hline
-Senioren & Benutzer des Systems & Hr.Schmidt S@oth.de Tel:7336 & wenig Erfahrung mit Smartphone & 10\% verfügbar & einfache Bedienung/ Angabe der Schwierigkeit nötig\\ \hline
+Senioren & Benutzer des Systems & Hr.Schmidt S@oth.de Tel:7336 & wenig Erfahrung mit Smartphone & 10\% verfügbar & einfache Bedienung\\ \hline
 junge Menschen/ Berufstätige & Benutzer des Systems & Fr.Bauer B@oth.de Tel:3960& viel Erfahrung mit Smartphone & 40\% verfügbar & wenig Zeit\\ \hline
 Gemeinden & Verkauf an Gemeinden & Hr.Schmidt S@oth.de Tel:3724& kennt Umgebung/ gute Locations & 20\% verfügbar & Angebot, Strecken für Gemeinden zu erstellen\\ \hline
 Entwickler & Entwickler des Systems & Hr.Hofbauer H@oth.de Tel:1346& sehr gute Programmier- kentnisse & 60\% verfügbar & Entwickler setzen Projekt um\\ \hline
@@ -272,19 +275,21 @@ Strecken- ersteller & Benutzer, die Strecken erstellen können & Hr.Meier M@oth.
 \end{tabular}
 \end{center}
 
-\section{Systemkontext}
+\newpage
+\section{Systemkontext}Anna Schmidbauer\\
 
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{13cm} 
-%	   \includegraphics[width=12cm]{Kontextdiagramm.png} 
+	   \includegraphics[width=12cm]{Kontextdiagramm.png} 
 	\end{minipage}}
 
 	
 \end{figure}
 
+\newpage
 \section{Anforderungen}
-\subsection{Funktionale Anforderungen}
+\subsection{Funktionale Anforderungen}Anna Schmidbauer\\
 {\Large Strecken laufen}\\
 \begin{itemize}
 \item Eingabe
@@ -309,7 +314,7 @@ Strecken- ersteller & Benutzer, die Strecken erstellen können & Hr.Meier M@oth.
 \begin{itemize}
 \item Eingabe
 	\begin{itemize}
-	\item Schwierigkeit, Zeit, Beschreibung, Koordinaten der Zwischen-/ 						Ziellocation, Rätsel
+	\item Schwierigkeit, Zeit, Beschreibung, Koordinaten der Zwischen-/ Ziellocation, Rätsel
 	\end{itemize}
 \item Verarbeitung
 	\begin{itemize}
@@ -427,7 +432,7 @@ Strecken- ersteller & Benutzer, die Strecken erstellen können & Hr.Meier M@oth.
 	\item Nachricht mit Ersteller, Zeit
 	\end{itemize}
 \end{itemize}
-\subsection{Nichtfunktionale Anforderungen}
+\subsection{Nichtfunktionale Anforderungen}Yvonne Schießl\\
 \subsubsection{Technische Anforderungen}
 \label{technAnf}
 • Das System muss mit Java entwickelt werden.\newline
@@ -457,16 +462,16 @@ Strecken- ersteller & Benutzer, die Strecken erstellen können & Hr.Meier M@oth.
 Anforderungen an die Zuverlässigkeit:\newline
 • Das System soll eine Absturzrate  $\leq \ $1\% haben. %Absturzrate genauer definieren?
 
-Yvonne Schießl
 
-\subsection{Abnahmekriterien}
+\subsection{Abnahmekriterien}Yvonne Schießl\\
 • Es ist möglich sich ein User-Konto einzurichten. Hierfür enthält die App auch eine Log-In Funktion\newline
 • Es ist möglich aus einer Datenbank Strecken auszuwählen und diese mit der App abzulaufen.\newline
 • Es ist für bestimmte Nutzer möglich selber Strecken zu erstellen und diese in die Datenbank hochzuladen.
 
-Yvonne Schießl
 
-\section{Risiken}
+
+\newpage
+\section{Risiken}Yvonne Schießl\\
 Natürlich birgt dieses Projekt wie jedes andere auch seine Risiken.\newline
 So gibt es zum Beispiel immer das große Risiko der Akzeptanz. Sind die Leute dazu bereit unsere App zu nutzen? Wir glauben, ja! Denn unsere Idee vereint Lösungen zu vielen Problematiken, denen sich fast jeder einmal bereits gegenüber sah, wie beispielsweise einen neuen Ort zu entdecken oder Gleichgesinnte zu treffen. Wir planen ebenfalls durch eine Werbecampagne mit angesehenen YouTubern die allgemeine Begeisterung für Geocaching vor allem bei Jugendlichen und jungen Erwachsenen zu steigern.\newline
 Aber auch wenn die App genutzt wird, ist das keine Garantie dafür, damit auch Geld zu verdienen, da das Ausgeben von Geld für Strecken optional ist. Dennoch sind wir davon überzeugt, dass das Geocaching die Leute so fesseln wird, dass sie bald dazu bereit sein werden Geld für mehr und anspruchsvollere Strecken auszugeben. Auch setzen wir auf einen eher niedrigeren Preis für Strecken und häufige Angebote für Pakete, um so zwar weniger Geld mit einem einzelnen Verkauf, aber mehr Verkäufe insgesamt zu machen.\newline
@@ -474,9 +479,10 @@ Wenn man nun im Internet mal danach sucht, wird man feststellen, dass es bereits
 Doch woher kommen unsere Strecken? Wenn keine neuen dazu kommen wird das Geocaching doch recht schnell langweilig. Hier nutzen wir das altbekannte System, dass Nutzer für Nutzer erstellen. Nämlich wird es spezielle Accounts für erfahrenere Nutzer geben, die die Möglichkeit bekommen, selber Strecken zu bauen und diese zu veröffentlichen. Und für den Fall dass es zu wenig Streckenersteller geben sollte, oder auch in der Anfangsphase der App, gibt es immer noch von uns angestellte Streckenersteller, die zusätzlich Geocaching Routen bauen.\newline
 Ein gewisses Restrisiko bleibt natürlich immer, dennoch haben wir uns darum bemüht sämtliche Risiken nach besten Möglichkeiten zu beseitigen.
 
-Yvonne Schießl
 
-\section{Kano-Modell}
+
+\newpage
+\section{Kano-Modell}Bernhard Wildangel\\\\
 %\small{
 \begin{tabular}{ | p{5cm} | p{1.1cm} | c | c | p{1.7cm} | p{1.5cm} | c |}
 \hline
@@ -490,20 +496,53 @@ Ich gehe davon aus, dass die App sicher ist & \ref{Sicherheit} & Basis & 0 & 40\
 Ich mag es nicht, wenn Apps ständig abstürzen & \ref{Bugs} & Basis & -4 & 70\% & hoch & A \\ \hline
 \end{tabular}\\
 
-Bernhard Wildangel
 
+
+\newpage
 \section{Use-Cases}
-\subsection{Use-Case-Diagramm}
+\subsection{Use-Case-Diagramm}Yvonne Schießl, Anna Schmidbauer, Bernhard Wildangel
 
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{atlas_usecasediagramm.png} 
+	   \includegraphics[width=15cm]{atlas_usecasediagramm.png} 
 	\end{minipage}}
 \end{figure}
-Yvonne Schießl, Anna Schmidbauer, Bernhard Wildangel
+
 
 \subsection{Use-Case-Beschreibungen}
+
+\begin{figure}[H] 
+\centering
+	   \includegraphics[width=15cm]{Usecase_AchievementErhalten.pdf} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering 
+	   \includegraphics[width=15cm]{Usecase_StreckeLaufen.pdf} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering
+	   \includegraphics[width=15cm]{UsecaseStreckenerstellen.pdf} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering
+	   \includegraphics[width=15cm]{UsecaseAuthentifizierung.pdf} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering
+	   \includegraphics[width=15cm]{Usecasebeschreibung_Gruppe_erstellen.pdf} 
+\end{figure}
+
+\begin{figure}[H] 
+\centering
+	   \includegraphics[width=15cm]{Usecasebeschreibung_Strecke_Kaufen.pdf} 
+\end{figure}
+
+\newpage
 \section{Aktivitätsdiagramm}
 
 {\Large Authentifizierung}
@@ -511,7 +550,7 @@ Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{authentifizierung_activity.png} 
+	   \includegraphics[width=15cm]{authentifizierung_activity.png} 
 	\end{minipage}}
 \end{figure}
 
@@ -521,16 +560,16 @@ Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{bewertung_activity.png} 
+	   \includegraphics[width=15cm]{bewertung_activity.png} 
 	\end{minipage}}
 \end{figure}
-
+\newpage
 {\Large Strecke erstellen}
 Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{streckeerstellen_activity.png} 
+	   \includegraphics[width=15cm]{streckeerstellen_activity.png} 
 	\end{minipage}}
 \end{figure}
 
@@ -541,17 +580,18 @@ Beim Erstellen einer neuen Strecke hat man die Möglichkeit, zusätzlich zum Zie
 Yvonne Schießl
 \begin{figure}[H] 
 \centering
-	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{AchievmentErhalten_Aktivität.JPG} 
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{AchievementErhalten_Aktivitaet.JPG} 
 	\end{minipage}}
 \end{figure}
+\newpage
 
 {\Large Chat benutzen}
 Yvonne Schießl
 \begin{figure}[H] 
 \centering
-	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{ChatBenutzen_Aktivität.JPG} 
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{ChatBenutzen_Aktivitaet.JPG} 
 	\end{minipage}}
 \end{figure}
 
@@ -559,20 +599,51 @@ Yvonne Schießl
 Yvonne Schießl
 \begin{figure}[H] 
 \centering
-	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{HerausforderungSenden_Aktivität.JPG} 
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{HerausforderungSenden_Aktivitaet.JPG} 
 	\end{minipage}}
 \end{figure}
+\newpage
 
 {\Large Strecke laufen}
 Yvonne Schießl
 \begin{figure}[H] 
 \centering
-	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{StreckeLaufen_Aktivität.JPG} 
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{StreckeLaufen_Aktivitaet.JPG} 
+	\end{minipage}}
+\end{figure}
+\newpage
+
+{\Large Gruppe erstellen}
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Aktivitaetsdiagramm_Gruppe_erstellen.PNG} 
+	\end{minipage}}
+\end{figure}
+\newpage
+{\Large Strecke suchen}
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Aktivitaetsdiagramm_Strecke_suchen.PNG} 
+	\end{minipage}}
+\end{figure}
+\newpage
+
+{\Large Strecke kaufen}
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Aktivitaetsdiagramm_Strecke_kaufen.PNG} 
 	\end{minipage}}
 \end{figure}
 
+\newpage
 \section{Zustandsdiagramme}
 
 {\Large Authentifizierung}
@@ -580,39 +651,58 @@ Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{authentifizierung_state.png} 
+	   \includegraphics[width=15cm]{authentifizierung_state.png} 
 	\end{minipage}}
 \end{figure}
-
+\newpage
 
 {\Large Strecke erstellen}
 Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{streckeerstellen_state.png} 
+	   \includegraphics[width=15cm]{streckeerstellen_state.png} 
 	\end{minipage}}
 \end{figure}
 
 Erklärung:\\
 Beim Erstellen einer neuen Strecke hat man die Möglichkeit, zusätzlich zum Zielort mehrere Zwischenorte hinzuzufügen. An diesen Orten bekommt man die Koordinaten für die nächste Station. Wahlweise lassen sich für die Stationen Rätsel hinzufügen, die man erst lösen muss um die nächsten Koordinaten zu erhalten. Der Zielort, Beschreibung, Schwierigkeit und Zeitaufwand müssen hinzugefügt werden.\\
+\newpage
 
 {\Large Achievement erhalten}
 Yvonne Schießl
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=16cm]{AchievementErhalten_Zustand.JPG} 
+	   \includegraphics[width=16cm]{AchievementErhalten_Zustand.JPG} 
+	\end{minipage}}
+\end{figure}
+\newpage
+
+{\Large Strecke suchen}
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{16cm} 
+	   \includegraphics[width=15cm]{Zustandsdiagramm_Strecke_kaufen.PNG} 
 	\end{minipage}}
 \end{figure}
 
+\newpage
 \section{Klassendiagramme}
 
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{16cm} 
+	   \includegraphics[width=15cm]{Klassendiagramm_Bernhard_Wildangel.PNG} 
+	\end{minipage}}
+\end{figure}
 
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{classdiagramm_anna.png} 
+	   \includegraphics[width=15cm]{classdiagramm_anna.png} 
 	\end{minipage}}
 \end{figure}
 Anna Schmidbauer\\
@@ -622,25 +712,24 @@ Es gibt zwei Arten von Benutzern: den normalen User und den Streckenersteller, d
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=16cm]{Klassendiagram_Yvonne.png} 
+	   \includegraphics[width=16cm]{Klassendiagram_Yvonne.png} 
 	\end{minipage}}
 \end{figure}
 Yvonne Schießl\\
 Erklärung:\\
-Es gibt zwei Arten von Benutzern: den normalen User und den Streckenersteller, der alle Rechte eines normalen Users hat, aber zusätzlich Strecken erstellen darf. Eine Strecke kann mehrere Bewertungen von Usern haben, jede Bewertung braucht aber eine zugeordnete Strecke. Artikel ist eine Klasse die die Strecke um einen Preis und eine Beliebtheit erweitert, sodass im Shop Artikel angezeigt und von Usern gekauft werden können. Es gibt zwei verschiedene Arten von Events, die jedoch im Grunde die gleichen Eigenschaften teilen und sich nur in einigen Spezifikationen unterschieden: ein Gruppenevent, bei dem man eine Strecke mit mehreren Leuten läuft, und die Wettbewerbsfunktion, bei der man anderen Usern eine Herausforderung schicken kann. In Chats kann man Nachrichten an andere User schicken bzw. Nachrichten von diesen empfangen, jede Nachricht muss jedoch Teil eines bestimmten Chats mit einem anderen User sein und kann nicht ohne einen Chat existieren.\\
+Es gibt zwei Arten von Benutzern: den normalen User und den Streckenersteller, der alle Rechte eines normalen Users hat, aber zusätzlich Strecken erstellen darf. Eine Strecke kann mehrere Bewertungen von Usern haben, jede Bewertung braucht aber eine zugeordnete Strecke. Artikel ist eine Klasse die die Strecke um einen Preis und eine Beliebtheit erweitert, sodass im Shop Artikel angezeigt und von Usern gekauft werden können. Es gibt zwei verschiedene Arten von Events, die jedoch im Grunde die gleichen Eigenschaften teilen und sich nur in einigen Spezifikationen unterschieden: ein Gruppenevent, bei dem man eine Strecke mit mehreren Leuten läuft, und die Wettbewerbsfunktion, bei der man anderen Usern eine Herausforderung schicken kann. In Chats kann man Nachrichten an andere User schicken bzw. empfangen, jede Nachricht muss jedoch Teil eines bestimmten Chats mit einem anderen User sein und kann nicht ohne einen Chat existieren.\\
 
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{classdiagramm_group.png} 
+	   \includegraphics[width=15cm]{classdiagramm_group.png} 
 	\end{minipage}}
 \end{figure}
 Yvonne Schießl, Anna Schmidbauer, Bernhard Wildangel\\
 Erklärung:\\
-Es gibt zwei Arten von Benutzern: den normalen User und den Streckenersteller, der alle Rechte eines normalen Users hat, aber zusätzlich Strecken erstellen darf. Die Anzahl der erstellten Strecken berechnet sich aus der Liste der erstellten Strecken und die Anzahl der gelaufenen Strecken berechnet sich aus der Liste der gelaufenen Strecken. Die Punkte die ein User hat, berechnen sich aus den gewonnenen Wettbewerben und seinen Achievements.\\
+Es gibt zwei Arten von Benutzern: den normalen User und den Streckenersteller, der alle Rechte eines normalen Users hat, aber zusätzlich Strecken erstellen darf. Die Anzahl der erstellten Strecken berechnet sich aus der Liste der erstellten Strecken und die Anzahl der gelaufenen Strecken berechnet sich aus der Liste der gelaufenen Strecken. Die Punkte die ein User hat, berechnen sich aus den gewonnenen Wettbewerben und seinen Achievements.
 Eine Strecke hat mehrere Bewertungen, einen Zielpunkt und kann mehrere Zwischenpunkte enthalten, die wiederum Rätsel haben können. Außerdem kann eine Strecke einen Preis haben, wenn die Strecke im Shop zu kaufen ist. Die Schwierigkeit ergibt sich aus den Angaben, die der Ersteller anfangs gemacht hat, und aus den Bewertungen, die die User erstellen.\\
 Es gibt zwei Arten von Events: ein Gruppenevent, bei dem man eine Strecke mit mehreren Leuten läuft, und die Wettbewerbsfunktion, bei der man anderen Usern eine Herausforderung schicken kann. Eine Gruppe aus Teilnehmern ist immer Teil eines Events, kann aber auch ohne Event existieren. Eine Gruppe hat auch einen Chat, welcher aus mehreren Nachrichten besteht, mindestens zwei Teilnehmer hat und auch ohne Gruppe existieren kann.\\
-
 
 \section{Sequenzdiagramme}
 
@@ -649,7 +738,7 @@ Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{streckeerstellen_seq.png} 
+	   \includegraphics[width=15cm]{streckeerstellen_seq.png} 
 	\end{minipage}}
 \end{figure}
 
@@ -661,10 +750,30 @@ Yvonne Schießl
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=16cm]{AchievementErhalten_Sequenz.JPG} 
+	   \includegraphics[width=16cm]{AchievementErhalten_Sequenz.JPG} 
 	\end{minipage}}
 \end{figure}
 
+{\Large Strecke suchen}
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Sequenzdiagramm_Strecke_suchen.PNG} 
+	\end{minipage}}
+\end{figure}
+\newpage
+
+{\Large Gruppe erstellen}
+Bernhard Wildangel
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Sequenzdiagramm_Gruppe_erstellen.PNG} 
+	\end{minipage}}
+\end{figure}
+
+\newpage
 \section{Komponenten- und Verteilungsdiagramm}
 \subsection{Komponentendiagramm}
 
@@ -672,12 +781,22 @@ Anna Schmidbauer
 \begin{figure}[H] 
 \centering
 	\fbox{\begin{minipage}{16cm} 
-%	   \includegraphics[width=15cm]{component.png} 
+	   \includegraphics[width=15cm]{component.png} 
 	\end{minipage}}
 \end{figure}
 
+\newpage
 \subsection{Verteilungsdiagramm}
-\section{Fazit}
+
+Yvonne Schießl
+\begin{figure}[H] 
+\centering
+	\fbox{\begin{minipage}{15cm} 
+	   \includegraphics[width=15cm]{Verteilungsdiagramm.PNG} 
+	\end{minipage}}
+\end{figure}
+\newpage
+\section{Fazit}Anna Schmidbauer\\
 Wir sehen ein sehr großes Potential in unserer App Atlas, da wir das Konzept von Geocaching auf ein neues Level bringen. Zum einen sprechen wir eine große Zielgruppe an und zum anderen bieten wir eine tolle Möglichkeit, neue Freunde und eine neue Umgebung kennenzulernen. Wir machen es möglich, dass so gut wie jede Altersgruppe Atlas benutzen kann, indem wir mehrere Strecken mit verschiedenen Schwierigkeitsstufen und Zeitaufwand anbieten.\\
 Atlas wird vor allem von den Menschen genutzt werden, die Spaß an der Bewegung haben und neue Orte entdecken wollen. Mit unserer Gruppenfunktion bringen wir die Menschen zusammen und übertragen die Begeisterung für Geocaching auf neue Benutzer.\\
 Auch die Finanzierung ist gesichert, da wir eng mit Gemeinden zusammenarbeiten wollen, damit sie Routen durch den Ort erstellen können, um den Tourismus zu fördern. Außerdem bieten wir unseren Kunden zusätzliche Strecken im Shop an, die sie dann einzeln oder in Paketen erwerben können.\\
